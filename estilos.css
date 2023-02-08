@@ -1,0 +1,577 @@
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   transition: 0.5s;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    transition: 0.5;
+}
+.banner{
+   display: block;
+   margin: auto;
+    width: 100%;
+    height: 300px;
+}
+nav{
+    margin: auto;
+    font-size:large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 25%;
+    font-weight: bolder;
+    background-color:black;
+}
+ul li{
+    display: inline-block;
+    margin: auto;
+    padding: 0px 20px;
+    
+}
+a{
+    font-family: sans-serif;
+    color:#ffeb3b;
+    text-decoration: none;
+}
+a:hover{
+    color: darkorange;
+}
+img{
+    height: 160px;
+    margin-left: 50px;
+}
+h1{
+    font-family: sans-serif;
+    font-size: xx-large;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+}
+.logo-formregis{
+    margin-left: 170px;
+}
+
+.formularioregis{
+    width: 550px;
+background: #000;
+padding: 30px;
+margin: auto;
+margin-top: 50px;
+border-radius: 8px;
+font-family: serif;
+color: #f2f2f2;
+transition: 0.5s;
+justify-items: stretch;
+}
+.formularioregis .btn{
+    width: 100%;
+    background-color: #2207A9 ;
+    border: none;
+    padding: 12px;
+    color: #f2f2f2;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.formularioregis p{
+    margin-top: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+.entradaregis{
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #f2f2f2;
+    font-family: serif;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #f2f2f2;
+  margin-left: 10px;
+}
+.formularioregis h4{
+    margin-top: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 23px;
+    margin: auto;
+}
+
+
+/*Propiedades para la seleccion de pago**/
+.opcion1{
+font-family: sans-serif;    
+padding-top: 100px;
+text-align: left;
+padding-left: 155px;
+font-size: 40px;
+}
+.delivery{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+/*Linea**/
+.linea{
+    
+        border-left: thick solid #000;
+        margin-top: -330px;
+        height:60%;
+        left: 50%;
+        position: absolute;
+       
+}
+.opcion2{
+font-family: sans-serif;
+margin-top:-300px;    
+text-align: right;
+padding-right: 140px;
+font-size: 40px;
+
+}
+h6{
+font-family: sans-serif;
+text-align: right;
+padding-right: 180px;
+font-size: 20px;
+}
+.recoger{
+margin-left:940px;
+height: 200px;
+display: flex;
+}
+#abrirmodal1{
+    color: #121212;
+    background-color: #ffeb3b;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 250px;
+    margin-top: 40px; 
+}
+#abrirmodal1:hover, #abrirmodal2:hover{
+border: 2px solid rgb(0, 110, 255);
+background-color: transparent;
+color: rgb(0, 110, 255);
+
+}
+#abrirmodal2{
+    color: beige;
+    background-color: rgb(0, 102, 255);
+    text-align: center;
+    font-size: 30px;
+    margin-left: 950px;
+    margin-top: -30px; 
+}
+.captcha{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+footer{
+    margin-top: 50px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo{
+    margin-right: 50px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 1rem;
+}
+.redessociales{
+    margin-top: -70px;
+    font-size: 30px;
+    text-align: center;
+    color: #f2f2f2;
+}
+.redes, .iconosocialface,.iconosocialtwitter,.iconosocialinstagram, .footerdatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+.iconosocialface{
+  height: 50px;
+  width: 50px;
+    background-image: url(Imagenes/Facebookicon.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.iconosocialtwitter{
+    height: 50px;
+  width: 50px;
+    background-image: url(Imagenes/Twittericon.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.iconosocialinstagram{
+    height: 50px;
+    width: 50px;
+      background-image: url(Imagenes/Instagramicon.png);
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 1rem;
+}
+ul{
+    list-style: none;
+}
+.iconosocial:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+.footerdatos{
+    list-style-type: circle;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.derechosautor{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+/*Pagina_Formulario_Delivery**/
+
+.formulario, .formulario-recoger{
+width: 400px;
+background: #000;
+padding: 30px;
+margin: auto;
+margin-top: 50px;
+border-radius: 8px;
+font-family: serif;
+color: #f2f2f2;
+transition: 0.5s;
+
+}
+.logo-form{
+    margin-left: 90px;
+}
+.terminos{
+    color: blue;  
+}
+.terminos:hover{
+    color: red;
+}
+.formulario h4,.formulario-recoger h4{
+    font-size: 30px;
+    text-align: center;
+}
+.entrada-recoger{
+  text-align: center;
+    width: 150px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #f2f2f2;
+    font-family: serif;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #f2f2f2;
+  margin-left: 95px;
+}
+.entrada{
+  text-align: center;
+    width: 150px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #f2f2f2;
+    font-family: serif;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #f2f2f2;
+  margin-left: 10px;
+}
+.formulario p{
+    margin-top: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+.formulario .btn,.formulario-recoger .btn{
+    width: 100%;
+    background-color: #2207A9 ;
+    border: none;
+    padding: 12px;
+    color: #f2f2f2;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+/*VENTANA EMERGENTE POPUP**/
+.popup2{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30 px;
+    color: #333;
+    margin: auto;
+    visibility: hidden;
+    border: 1px solid #000;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30 px;
+    color: #333;
+    margin: auto;
+    visibility: hidden;
+    border: 1px solid #000;
+}
+.open-popup{
+    visibility: visible;
+}
+.close-popup{
+    visibility: hidden;
+}
+.popup .ubicacion{
+       width: 100%;
+       height: 100%;
+       margin: auto;
+}
+.popup2 .moto{
+    width: 30%;
+       height: 30%;
+       margin: auto;
+}
+.popup2 .codigo{
+    width: 50%;
+       height: 50%;
+       margin: auto;
+}
+
+.popup .chec{
+    margin-left: -15px;
+    width: 150px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup2 h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button, .popup2 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+.LocalPizzas{
+
+    width: 700px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 50px;
+    box-shadow: 7px 8px 12px black;
+
+}
+
+.conteiner12{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.Texto2{
+    font-family: sans-serif;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 100px;
+    font-size: 20px;
+
+}
+
+
+.Texto3{
+    font-family: sans-serif;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 50px;
+    font-size: 20px;
+
+}
+
+
+.LocalPizzas2{
+
+    width: 1100px;
+    height: 700px;
+    margin: 50px;
+    box-shadow: 7px 8px 12px black;
+
+}
+
+.conteiner13{
+
+    display: flex;
+    justify-content: center;
+}
+
+.Texto5{
+    font-family: sans-serif;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 10px;
+    font-size: 20px;
+
+}
+
+
+
+
+.Ayuda2{
+
+    width: 700px;
+    height: 250px;
+    margin: 50px;
+    box-shadow: 7px 8px 12px black;
+
+}
+
+.conteiner20{
+
+    display: flex;
+    justify-content: center;
+}
+
+.Ayuda3{
+
+    width: 700px;
+    height: 250px;
+    margin: 50px;
+    display: flex;
+    box-shadow: 7px 8px 12px black;
+
+}
+
+.conteiner21{
+
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.Ayuda4{
+
+    width: 1000px;
+    height: 250px;
+    margin: 50px;
+    display: flex;
+    box-shadow: 7px 8px 12px black;
+
+}
+
+.conteiner22{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.Texto13{
+    font-family: sans-serif;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+.Fotito{
+
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    display: flex;
+    border-radius: 50px;
+    box-shadow: 7px 8px 12px black;
+
+}
+
+.conteiner28{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    
+<!--Menu-->
+    <nav>
+        <div><img src="images/logoNE.jpeg"></div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Locales.html">Donde estamos</a></li>
+                <li><a href="formapago.html">Forma de pago</a></li>
+                <li><a href="Ayuda.html">Ayuda</a></li>
+                <li><a href="Cuenta.html">Cuenta</a></li>
+            </ul>
+        </nav>
+
+        <!--Formulario-->
+        
+        <section class="formulario">
+            <img class="logo-form" src="images/logoNE.jpeg" alt="">
+            <h4>INGRESE SUS DATOS PERSONALES</h4>
+            <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Nombre" size="10"/>
+            <input class="entrada" type="text" id="apaterno" name="apaterno" placeholder="Apellido Paterno"/>
+            <input class="entrada" type="text" id="amaterno" name="amaterno" placeholder="Apellido Materno"/>
+            <input class="entrada" type="text" id="alcaldia" name="alcaldia" placeholder="Alcaldia"/>
+            <input class="entrada" type="text" id="colonia" name="colonia" placeholder="Colonia"/>
+            <input class="entrada" type="text" id="calle" name="calle" placeholder="Calle"/>
+            <input class="entrada" type="text" id="cp" name="cp" placeholder="Codigo Postal"/>
+            <br>
+            <p><input type="checkbox"> Estoy de acuerdo con <a class="terminos" href="#">Términos y condiciones</a></p>
+            <button class="btn" type="submit" value="Listo"onclick="openPopup()">Listo</button>  
+        </section>
+
+        <!--Popup-->
+         <div class="popup2" id="popup">
+            <img class="moto" src="Imagenes/motoneta.gif">
+            <h2>ESCANEÉ EL SIGUIENTE CODIGO PARA PAGAR</h2>
+            <p>Codigo QR</p>
+            <img class="codigo" src="Imagenes/qr.jpg">
+           <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        <script>
+            let popup=document.getElementById("popup");
+        
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+
+
+
+
+
+        <!--footer-->
+<footer class="abajo">
+    <img class="logo" src="images/logoNE.jpeg" alt="">
+    <h1 class="redessociales">REDES SOCIALES</h1>
+
+    <!--Iconos del footer-->
+    <div class="redes"> 
+        <li><a href="#" class="iconosocialface"></a></li>
+        <li><a href="#" class="iconosocialtwitter"></a></li>
+        <li><a href="#" class="iconosocialinstagram"></a></li>
+    </div>
+    
+    <!--Datos del footer-->
+    <ul class="footerdatos">
+        <li class="menu-item">Términos y condiciones</li>
+        <li class="menu-item">Aviso de privacidad</li>
+        <li class="menu-item">Comparte tu opinión</li>
+        <li class="menu-item">Preguntas frecuentes</li>
+        <li class="menu-item">Contacto</li>
+    </ul>
+    <span class="derechosautor">2022&copy;TecnoWolves, Todos los derechos reservados. Términos y condiciones</span>
+    
+</footer>
+</body>
+</html>
